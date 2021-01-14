@@ -120,12 +120,12 @@
       padding: 16px; 
   }
 
-  .navbar_logo{
+  .navbar__logo{
       font-weight: var(--weight-semi-bold);
       font-size: var(--font-medium); 
   }
 
-  .navbar__menu{
+.navbar__menu{
       display:flex; 
       color:var(--color-white);
       

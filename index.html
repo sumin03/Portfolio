@@ -37,7 +37,7 @@
         <button class="home__contact">CONTACT ME</button>
     </section>
     <!-- About -->
-    <section id="about" class="section">
+    <section id="about" class="section section__container">
         <h1>About me</h1>
         <p>나를 잘 어필할 수 있는 문장을 쓰는게 좋다~ 두 세 문장 정도 </p>
         <div class="about__majors">
@@ -88,45 +88,76 @@
     </section>
     <!-- Skills -->
     <section id="skills" class="section">
-        <h1>Skills</h1>
-        <h2>Skills & Attributes</h2>
-        <p>
-            Experience with all phases of the software ~ 
-        </p>
-        <div class="skillset">
-            <div class="skillset__left">
-                <h3 class="skillset__title"></h3>
-                <div class="skill">
-                    <div class="skill_description">
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>JAVASCRIPT</span>
-                        <span>JQUERY</span>
+        <div class="section__container">
+            <h1>Skills</h1>
+            <h2>Skills & Attributes</h2>
+            <p>
+                Experience with all phases of the software ~ 
+            </p>
+            <div class="skillset">
+                <div class="skillset__left">
+                    <h3 class="skillset__title">Skills</h3>
+                    <div class="skill">
+                        <div class="skill__description">
+                            <span>HTML</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__value" style="width:80%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill">
+                        <div class="skill__description">
+                            <span>CSS</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__value" style="width:70%"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill__description">
+                            <span>JAVASCRIPT</span>
+                            <span>40%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__value" style="width:40%"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill__description">
+                            <span>JQUERY</span>
+                            <span>40%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__value" style="width:40%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skillset__right">
+                    <div class="tools">
+                        <h3 class="skillset__title">Tools</h3>
+                        <ul class="tools_list">
+                            <li><span>Visual Studio Code</span></li>
+                            <li><span>Dreamweaver</span></li>
+                            <li><span>Photoshop</span></li>
+                            <li><span>Illustrator</span></li>
+                            <li><span>Figma</span></li>
+                        </ul>
+                    </div>
+                    <div class="etc">
+                        <h3 class="skillset__title">Etc</h3>
+                        <ul class="etc__list">
+                            <li><span>Git</span></li>
+                            <li><span>Searching information</span></li>
+                            <li><span>Goal Driven</span></li>
+                            <li><span>Time-sensitive</span></li>
+                        </ul>
                     </div>
                 </div>
             </div>
-            <div class="skillset__right">
-                <div class="tools">
-                    <h3 class="skillset__title">Tools</h3>
-                    <ul class="tools_list">
-                        <li><span>Visual Studio Code</span></li>
-                        <li><span>Dreamweaver</span></li>
-                        <li><span>Photoshop</span></li>
-                        <li><span>Illustrator</span></li>
-                        <li><span>Figma</span></li>
-                    </ul>
-                </div>
-                <div class="etc">
-                    <h3 class="skillset__title">Etc</h3>
-                    <ul class="etc__list">
-                        <li><span>Git</span></li>
-                        <li><span>Searching information</span></li>
-                        <li><span>Goal Driven</span></li>
-                        <li><span>Time-sensitive</span></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+        </div> 
     </section>
     <!-- Work -->
     <section id="work" class="section">

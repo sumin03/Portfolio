@@ -123,11 +123,20 @@
   /*navbar*/
 
   #navbar{
+      position:fixed;
       display:flex; 
+      width:100%;
       justify-content: space-between;
-      background-color: var(--color-pink);
+      background-color: transparent;
       align-items:center; 
       padding: 16px; 
+      transition:all var(--animation-duration) ease-in-out;
+      z-index:1;
+  }
+
+  #navbar.navbar--dark{
+      background-color:var(--color-pink);
+      padding:8px;
   }
 
   .navbar__logo{
@@ -177,6 +186,7 @@
   #home{
     background:url("imgs/background.png") center/cover no-repeat;
     padding:40px;
+    padding-top:120px;
     text-align:center;
   }
 

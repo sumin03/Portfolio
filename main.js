@@ -114,10 +114,7 @@ workBtnContainer.addEventListener('click', (e) =>{
 
 
 
-function scrollIntoView(selector) {
-    const scrollTo = document.querySelector(selector);
-    scrollTo.scrollIntoView({behavior:'smooth'});
-}
+
 
 
 
@@ -145,6 +142,12 @@ const sectionIds = [
     selectedNavItem.classList.add('active');
   }
   
+  function scrollIntoView(selector) {
+    const scrollTo = document.querySelector(selector);
+    scrollTo.scrollIntoView({behavior:'smooth'});
+    selectNavItem(navItems[sectionIds.indexOf(selector)]);
+}
+
   const observerOptions = {
     root: null,
     rootMargin: '0px',

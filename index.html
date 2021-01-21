@@ -10,6 +10,7 @@
     <script src="https://kit.fontawesome.com/c233cb2fc3.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com"> 
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <link rel="stylesheet" href="style.css">
     <script src="main.js" defer></script>
 </head>
@@ -17,7 +18,7 @@
     <!--Navbar-->
     <nav id="navbar">
         <div class="navbar__logo">
-            <img src="imgs/favicon.png" alt=logo">
+            <img src="imgs/favicon.png" alt="logo">
             <a href="#">Sumin</a>
         </div>
         <ul class="navbar__menu">
@@ -25,7 +26,6 @@
             <li class="navbar__menu__item" data-link="#about">About</li>
             <li class="navbar__menu__item" data-link="#skills">Skills</li>
             <li class="navbar__menu__item" data-link="#work">Work</li>
-            <li class="navbar__menu__item" data-link="#testimonials">Testimonials</li>
             <li class="navbar__menu__item" data-link="#contact">Contact</li>
         </ul>
 
@@ -38,15 +38,21 @@
     <section id="home">
         <div class="home__container">
             <img src="imgs/me.JPG" alt="Sumin" class="home__avatar">
-            <h1 class="home__title">Hello, <br> I'm Sumin</h1>
-            <h2 class="home__description">디자인이 가능한 퍼블리셔 이수민입니다.</h2>
+            <h1 class="ml6">
+                <span class="text-wrapper">
+                  <span class="letters">
+                    <h1 class="home__title">Hello, I'm Sumin</h1>
+                  </span>
+                </span>
+              </h1>
+              <h2 class="home__description">디자인이 가능한 개발자 이수민입니다.</h2>
             <button class="home__contact">CONTACT ME</button>
         </div>
     </section>
     <!-- About -->
     <section id="about" class="section section__container">
         <h1>About me</h1>
-        <p>나를 잘 어필할 수 있는 문장을 쓰는게 좋다~ 두 세 문장 정도 </p>
+        <p>새로운 것에 도전하는 것을 두려워 하지 않고, <br> 발전하기 위해 꾸준히 공부하는 개발자 입니다.</p> 
         <div class="about__majors">
             <div class="major">
                 <div class="major__icon">
@@ -229,31 +235,13 @@
             </div>
         </div>
     </section>
-    <!-- Testimonials -->
-    <section id="testimonials" class="section">
-        <div class="section_container">
-            <h1>Testimonials</h1>
-            <h3>See what they say about me</h3>
-            <div class="testimonials">
-                <div class="testimonial">
-                    <img src="imgs/testimonial/people.jpg" alt="People" class="testimonial__avatar">
-                    <div class="testimonial__speech-bubble">
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                        <p class="name"><a href="imgs/testimonial/people.jpg">Kevin</a></p>
-                    </div>
-                </div>
-                <div class="testimonial">
-                    <div class="testimonial__speech-bubble">
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                        <p class="name"><a href="">Kevin</a></p>
-                    </div>
-                    <img src="imgs/testimonial/people.jpg" alt="People" class="testimonial__avatar">
-                </div>
-            </div>
-        </div>
-    </section>
     <!-- Contact -->
     <section id="contact" class="section">
+        <div class="circle c1"></div>
+        <div class="circle c2"></div>
+        <div class="circle c3"></div>
+        <div class="circle c4"></div>
+        <div class="circle c5"></div>
         <h1 class="contact__title">Let's talk</h1>
         <h2 class="contact__email">breath.ing0210@gmail.com</h2>
         <div class="contact__links">
@@ -268,5 +256,8 @@
     <button class="arrow-up">
         <i class="fas fa-arrow-up"></i>
     </button>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@mojs/core"></script>
 </body>
 </html>

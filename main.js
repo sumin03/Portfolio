@@ -4,6 +4,8 @@
 const navbar = document.querySelector('#navbar');
 const navbarHeight = navbar.getBoundingClientRect().height;
 
+
+
 document.addEventListener('scroll', () => {
     console.log(window.scrollY);
     console.log(`navbarHeight: ${navbarHeight}` );
@@ -18,7 +20,7 @@ document.addEventListener('scroll', () => {
 
 // Handle scrolling when tapping on the navbar menu 
 const navbarMenu = document.querySelector(".navbar__menu");
-navbarMenu.addEventListener('click', (addEventListener) => {
+navbarMenu.addEventListener('click', (event) => {
     console.log(event.target.dataset.link);
     const target = event.target; 
     const link = target.dataset.link ; 
@@ -126,7 +128,6 @@ const sectionIds = [
     '#about',
     '#skills',
     '#work',
-    '#testimonials',
     '#contact',
   ];
   const sections = sectionIds.map(id => document.querySelector(id));
@@ -168,21 +169,76 @@ const sectionIds = [
     });
   };
   
-  const observer = new IntersectionObserver(observerCallback, observerOptions);
-  sections.forEach(section => observer.observe(section));
+ const observer = new IntersectionObserver(observerCallback, observerOptions);
+sections.forEach(section => observer.observe(section));
 
   
-  window.addEventListener('wheel', ()=> {
-      if(window.scrollY ===0){
-          selectedNavIndex = 0; 
-      }else if (
+window.addEventListener('wheel', ()=> {
+   if(window.scrollY ===0){
+      selectedNavIndex = 0; 
+  }else if (
 
-        Math.round(window.scrollY + window.innerHeight) >=
+   Math.round(window.scrollY + window.innerHeight) >=
     
-        document.body.clientHeight
+   document.body.clientHeight
     
-      ) {
-          selectedNavIndex = navItems.length - 1; 
-      }
-      selectNavItem(navItems[selectedNavIndex]);
-  })
+  ) {
+    selectedNavIndex = navItems.length - 1; 
+ }
+  selectNavItem(navItems[selectedNavIndex]);
+})
+  const OPTS = {
+    fill:           'none',
+    radius:         25,
+    strokeWidth:    { 50 : 0 },
+    scale:          { 0: 1 },
+    angle:          { 'rand(-35, -70)': 0 },
+    duration:       500,
+    left: 0,        top: 0,
+    easing: 'cubic.out'
+  };
+  
+  const circle1 = new mojs.Shape({
+    ...OPTS,
+    stroke:         'rebeccapurple',
+  });
+  
+  const circle2 = new mojs.Shape({
+    ...OPTS,
+    radius:         { 0 : 15 },
+    strokeWidth:    { 30: 0 },
+    stroke:         'lavender',
+    delay:          'rand(75, 150)'
+  });
+  
+  document.addEventListener( 'click', function (e) {
+    
+     circle1
+      .tune({ x: e.pageX, y: e.pageY  })
+      .replay();
+    
+    circle2
+      .tune({ x: e.pageX, y: e.pageY  })
+      .replay();
+    
+  });
+
+
+// Wrap every letter in a span
+var textWrapper = document.querySelector('.ml6 .letters');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.ml6 .letter',
+    translateY: ["1.1em", 0],
+    translateZ: 0,
+    duration: 750,
+    delay: (el, i) => 50 * i
+  }).add({
+    targets: '.ml6',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+  });

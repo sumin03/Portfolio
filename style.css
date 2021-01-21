@@ -13,6 +13,8 @@
     --color-yellow: #fff7d1;
     --color-orange: #feb546;
     --color-black: #000000;
+    --color-background:#ccccff;
+    --color-icon:#605770;
   
     /* Font size */
     --font-large: 48px;
@@ -135,7 +137,7 @@
   }
 
   #navbar.navbar--dark{
-      background-color:var(--color-pink);
+      background-color:var(--color-background);
       padding:8px;
   }
 
@@ -171,7 +173,7 @@
 
   .navbar__menu__item:hover{
       border-color:var(--color-white);
-      background-color:var(--color-dark-pink);
+      background-color:var(--color-icon);
   }
 
   .navbar__toggle-btn{
@@ -187,7 +189,7 @@
   /* Home */
 
   #home{
-    background:url("imgs/background.png") center/cover no-repeat;
+    background:url("imgs/purplebackground.jpg") center/cover no-repeat;
     padding:40px;
     padding-top:120px;
     text-align:center;
@@ -217,6 +219,26 @@
 .home__contact:hover{
     background-color:var(--color-orange);
 }
+.ml6 {
+    position: relative;
+    font-weight: 900;
+    font-size:3.6em;
+    color:var(--color-white);
+  }
+  
+  .ml6 .text-wrapper {
+    position: relative;
+    display: block;
+    padding-top: 0.2em;
+    padding-right: 0.05em;
+    padding-bottom: 0.1em;
+    overflow: hidden;
+  }
+  
+  .ml6 .letter {
+    display: inline-block;
+    line-height: 1em;
+  }
 
   /* Section */
   .section{
@@ -243,10 +265,10 @@
       font-size:70px;
       line-height:170px;
       margin:auto;
-      border:1px solid var(--color-blue);
+      border:1px solid var(--color-icon);
       border-radius: 50%;
       margin-bottom:16px;
-      color:var(--color-blue);
+      color:var(--color-icon);
   }
 
   .major__title, .major__description{
@@ -361,7 +383,7 @@
   }
   .category__btn.selected,
   .category__btn:hover{
-      background-color: var(--color-pink);
+      background-color: var(--color-icon);
       color:var(--color-white);
   }
 
@@ -460,58 +482,13 @@
   }
 
 
-  /* Testimonial */
-  #testimonials{
-      background-color: var(--color-light-white);
-  }
-
-  .testimonials{
-      margin: 40px; 
-      
-  }
-
-  .testimonial{
-      display:flex; 
-      margin:40px;
-      
-  }
-
-  .testimonial__avatar{
-      width:150px; 
-      height:150px;
-      border-radius: 50%;
-      margin:12px;
-  }
-
-  .testimonial__avatar:nth-child(odd){
-      margin-right:40px;
-  }
-
-  .testimonial__avatar:nth-child(even){
-      margin-left:40px;
-  }
-
-  .testimonial__speech-bubble{
-      padding:18px;
-      background-color:var(--color-white);
-      border-radius: var(--size-border-radius);
-  }
-
-  .testimonial__speech-bubble p{
-      color:var(--color-light-grey);
-  }
-
-  .testimonial__speech-bubble a{
-      color:var(--color-pink);
-  }
-
-  .name{
-      margin-top:60px;
-  }
+  
 
   /* Contact */
   #contact{
-      background-color:var(--color-pink);
+      background-color:var(--color-background);
+      position:relative;
+      overflow:hidden;
   }
 
   .contact__title,
@@ -520,6 +497,69 @@
       color:var(--color-white);
   }
 
+
+  .circle{
+      position: absolute;
+      border-radius: 50%;
+      animation:ball 1.3s ease-in Infinite Alternate;
+  }
+
+  .c1{
+      width:150px; 
+      height:150px;
+      border:10px solid lavender;
+      background-color:transparent;
+      top:40px; left:50px;
+  }
+
+  .c2{
+      width:200px; 
+      height:200px; 
+      background-color:purple;
+      opacity: 0.4;
+      bottom:-40px; 
+      left:200px;
+  }
+
+  .c3{
+      width:100px; 
+      height: 100px;
+      background-color:lavender;
+      right:20px; 
+      top:100px;
+
+  }
+
+  .c4{
+      width:53px; 
+      height:53px; 
+      background-color:purple; 
+      opacity: 0.3; 
+      right:250px; 
+      top:10px;
+  }
+
+  .c5{
+    width:150px; 
+    height:150px;
+    border:5px solid lavender;
+    background-color:transparent;
+    bottom:40px; right:250px;
+  }
+
+  @keyframes ball {
+    0% {
+      top:0px;
+    }
+    95% {
+      width: 100px;
+    }
+    to {
+      top:300px;
+      width:100px;
+      height:90px
+    } 
+  }
   .contact__title{
       margin:32px 0; 
   }
@@ -546,7 +586,7 @@
       width: 70px;
       height:70px;
       font-size:50px;
-      background-color:var(--color-pink);
+      background-color:var(--color-background);
       color:var(--color-white);
       border-radius: 50%;
       opacity:0; 

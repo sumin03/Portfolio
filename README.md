@@ -1,2 +1,2 @@
-# Portfolio
-Sumin's portfolio 
+# 👋🏼Sumin's Portfolio 
+This is my portfolio

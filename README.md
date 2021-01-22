@@ -178,7 +178,7 @@ I tried to highlight my skills by giving css effetcs
   }
 ```
 
-##Skils 
+## Skils 
 
 In About part, I only indicate What I can do. 
 But In Skills part I show my skills with **%** to show precisely.

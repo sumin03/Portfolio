@@ -248,9 +248,35 @@ workBtnContainer.addEventListener('click', (e) =>{
 
 
 ```
-
-
-
 ## Contact 
+
+This part is how to keep in touch with me. 
+I wrote my e-mail address and put my github link(press github icon). 
+And To give more effect, I used css keyframe!
+
+![contact](https://user-images.githubusercontent.com/77384682/105495232-44770a00-5cff-11eb-9ea5-c2562d3429bc.gif)
+
+
+Here is my code!
+
+```css
+@keyframes ball {
+    0% {
+      top:0px;
+    }
+    95% {
+      width: 100px;
+    }
+    to {
+      top:300px;
+      width:100px;
+      height:90px
+    } 
+  }
+```
+
+
+
+## How to contact me 
 
 E-mail address : <breath.ing0210@gmail.com>

@@ -13,7 +13,7 @@
 * **[Arrow](#arrow)**
 
 ## Features 
-* Responsive 
+* Responsive (break point is 768px)
 * Javascript
 * html 
 * css

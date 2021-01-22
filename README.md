@@ -11,6 +11,7 @@
 * **[Work](#work)** 
 * **[Contact](#contact)**
 * **[Arrow](#arrow)**
+* **[Mouse-effect](#mouse-effect)**
 
 ## Features 
 * Responsive (break point is 768px)
@@ -322,6 +323,63 @@ arrowUp.addEventListener('click', () => {
 });
 
 ```
+
+
+
+## Mouse-effect
+
+> 📍If you want to know about mo.js Check out this website <https://mojs.github.io/tutorials/shape-swirl/#then-zen>
+> 📍This is the code I got the idea <https://codepen.io/sol0mka/pen/XKdWJg>
+
+I wanted to give more entertainment element on my portfolio so I used mo.js. 
+When you clicked on my website you will find out purple circule will appear around your mouse! 
+Let's check my code and try out!
+
+![mouse](https://user-images.githubusercontent.com/77384682/105500752-abe48800-5d06-11eb-8406-3a0618a99d4d.gif)
+
+
+```Javascript
+
+const OPTS = {
+    fill:           'none',
+    radius:         25,
+    strokeWidth:    { 50 : 0 },
+    scale:          { 0: 1 },
+    angle:          { 'rand(-35, -70)': 0 },
+    duration:       500,
+    left: 0,        top: 0,
+    easing: 'cubic.out'
+  };
+  
+  const circle1 = new mojs.Shape({
+    ...OPTS,
+    stroke:         'rebeccapurple',
+  });
+  
+  const circle2 = new mojs.Shape({
+    ...OPTS,
+    radius:         { 0 : 15 },
+    strokeWidth:    { 30: 0 },
+    stroke:         'lavender',
+    delay:          'rand(75, 150)'
+  });
+  
+  document.addEventListener( 'click', function (e) {
+    
+     circle1
+      .tune({ x: e.pageX, y: e.pageY  })
+      .replay();
+    
+    circle2
+      .tune({ x: e.pageX, y: e.pageY  })
+      .replay();
+    
+  });
+  
+ ```
+  
+
+
 
 ## How to contact me 
 

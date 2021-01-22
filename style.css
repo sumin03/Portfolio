@@ -625,7 +625,7 @@
       #navbar{
           flex-direction: column;
           align-items: flex-start;
-          background-color:var(--color-background);
+          background-color: transparent;
       }
 
       .navbar__menu{
@@ -642,6 +642,7 @@
 
       #navbar.navbar--dark{
           padding:16px;
+          background-color:var(--color-background);
       }
 
       .section{

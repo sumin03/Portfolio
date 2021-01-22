@@ -210,6 +210,44 @@ when you hover+click, Small ball is dropped from the top to indicate how many pr
 When you hover the project, You can see the title and what I've done. 
 ![work](https://user-images.githubusercontent.com/77384682/105484829-53ee5700-5cef-11eb-9d7f-ae1e68869086.gif)
 
+As you guys know we can make those effect with jquery but I tried to make pure vanila javascript 
+Here is my code! 
+
+```javascript
+
+const workBtnContainer = document.querySelector(".work__categories");
+const projectContainer = document.querySelector(".work__projects");
+const projects = document.querySelectorAll(".project"); //To get all projects as an array! 
+workBtnContainer.addEventListener('click', (e) =>{
+    const filter = e.target.dataset.filter || e.target.parentNode.dataset.filter; 
+    if(filter == null){
+        return;
+    }
+
+    //Remove selection from the previous item and select the new one 
+    const active = document.querySelector(".category__btn.selected");
+    active.classList.remove('selected');
+    const target = e.target.nodeName === 'BUTTON' ? e.target : e.target.parentNode; 
+    target.classList.add('selected');
+
+    projectContainer.classList.add('anim-out');
+
+    setTimeout(() => {
+        projects.forEach((project) => {
+            console.log(project);
+            if(filter === '*' || filter === project.dataset.type){
+                project.classList.remove('invisible');
+            }else{
+                project.classList.add('invisible');
+            }
+        });
+        projectContainer.classList.remove('anim-out');
+    },300);
+    
+});
+
+
+
 
 
 

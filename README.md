@@ -8,8 +8,8 @@
 * **[home](#home)**
 * **[About](#about)**
 * **[Skills](#skills)**
-* Work 
-* Contact 
+* **[Work](#work)** 
+* **[Contact](#contact)**
 
 ## Features 
 * Responsive 
@@ -208,7 +208,7 @@ In work part, I put my projects.
 As you can see there has 3 buttons to see my projects. 
 when you hover+click, Small ball is dropped from the top to indicate how many projects in there. 
 When you hover the project, You can see the title and what I've done. 
-
+![work](https://user-images.githubusercontent.com/77384682/105484829-53ee5700-5cef-11eb-9d7f-ae1e68869086.gif)
 
 
 

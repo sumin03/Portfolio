@@ -5,7 +5,7 @@
 
 
 ## Table of Content 
-* Home
+* **[home](#home)**
 * Skills 
 * Work 
 * Contact 
@@ -28,6 +28,9 @@ _2.Trying to not to use Jquery <br>_
 _3.Studying Javascript and using it as much as I can do <br>_
 _4.Using purple color to show my character <br>_
 
+
+
+## Home
 
 ## Contact 
 

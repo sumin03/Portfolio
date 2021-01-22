@@ -178,12 +178,29 @@ I tried to highlight my skills by giving css effetcs
   }
 ```
 
-## Skils 
+## Skills 
 
 In About part, I only indicate What I can do. 
 But In Skills part I show my skills with **%** to show precisely.
 
 <img width="800" alt="스크린샷 2021-01-22 오후 7 53 52" src="https://user-images.githubusercontent.com/77384682/105482616-f9073080-5ceb-11eb-8572-25791dfbad8c.png">
+
+I know that we can use _progress bar_ but I've heard that there has some styling problems so I made my own progress bar
+
+Here is the code! 
+
+```html 
+<div class="skill">
+    <div class="skill__description">
+      <span>HTML</span>
+      <span>80%</span>
+    </div>
+   <div class="skill__bar">
+     <div class="skill__value" style="width:80%"></div>
+   </div>
+ </div>
+
+```
 
 
 

@@ -87,8 +87,8 @@ anime.timeline({loop: true})
 
 ```
 
-This is the way I used html code
 <img width="648" alt="스크린샷 2021-01-22 오후 7 24 45" src="https://user-images.githubusercontent.com/77384682/105479415-c52a0c00-5ce7-11eb-846c-1aee25b14040.png">
+This is my html code
 
 <hr>
 

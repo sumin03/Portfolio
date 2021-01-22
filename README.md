@@ -328,7 +328,7 @@ arrowUp.addEventListener('click', () => {
 
 ## Mouse-effect
 
-> 📍If you want to know about mo.js Check out this website <https://mojs.github.io/tutorials/shape-swirl/#then-zen>
+> 📍If you want to know about mo.js Check out this website <https://mojs.github.io/tutorials/shape-swirl/#then-zen> <br>
 > 📍This is the code I got the idea <https://codepen.io/sol0mka/pen/XKdWJg>
 
 I wanted to give more entertainment element on my portfolio so I used mo.js. 

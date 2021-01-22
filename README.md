@@ -31,6 +31,8 @@ _4.Using purple color to show my character <br>_
 
 
 ## Home
+I want to make this part much more interesting way. So I decided to give some animation on the text. 
+> 📍 This is the website where I got the idea : <https://tobiasahlin.com/moving-letters/>
 
 ## Contact 
 

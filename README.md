@@ -34,6 +34,12 @@ _4.Using purple color to show my character <br>_
 I want to make this part much more interesting way. So I decided to give some animation on the text. 
 > 📍 This is the website where I got the idea : <https://tobiasahlin.com/moving-letters/>
 
+
+![hello](https://user-images.githubusercontent.com/77384682/105478933-32896d00-5ce7-11eb-84fe-d418ee66cf3a.gif)
+
+Add those code on your code. 
+
+
 ```html 
 <h1 class="ml2">Sunny mornings</h1>
 
@@ -78,6 +84,8 @@ anime.timeline({loop: true})
   });
 
 ```
+
+
 
 ## Contact 
 

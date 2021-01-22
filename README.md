@@ -6,7 +6,7 @@
 
 ## Table of Content 
 * **[home](#home)**
-* Skills 
+* **[Skills](#skills)**
 * Work 
 * Contact 
 
@@ -146,6 +146,8 @@ document.addEventListener('scroll', ()=>{
 })
 
 ```
+
+## Skills
 
 
 ## Contact 

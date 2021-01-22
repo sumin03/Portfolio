@@ -1,5 +1,5 @@
  #  ✨Sumin's Portfolio✨
-This is my responsive portfolio 
+>This is my responsive portfolio 
 
 
 ## Table of Content 
@@ -22,6 +22,6 @@ It was the first time I made website with Pure vanilla Javascript, so I had lots
 
 ## Goals 
 1.Making responsive webpage <br>
-2.Trying to not to use Jquery 
-3.Studying Javascript and using it as much as I can do 
-4.Using purple color to show my character 
+2.Trying to not to use Jquery <br>
+3.Studying Javascript and using it as much as I can do <br>
+4.Using purple color to show my character <br>

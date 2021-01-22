@@ -25,3 +25,8 @@ _1.Making responsive webpage <br>_
 _2.Trying to not to use Jquery <br>_
 _3.Studying Javascript and using it as much as I can do <br>_
 _4.Using purple color to show my character <br>_
+
+
+## Contact 
+
+* E-mail address : <breath.ing0210@gmail.com>

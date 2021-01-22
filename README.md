@@ -1,7 +1,7 @@
  #  👋🏼Sumin's Portfolio
 This is my responsive portfolio 
 
-![Sumin's Portfolio screenshot](project/imgs/screenshot.png)
+![Sumin's Portfolio screenshot](../project/imgs/screenshot.png)
 
 ## Table of Content 
 * Home

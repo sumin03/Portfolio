@@ -98,7 +98,54 @@ I made navbar part transparent when It is on the top, but when it is scrolled do
 ![home](https://user-images.githubusercontent.com/77384682/105480165-bf80f600-5ce8-11eb-861d-9d5bd73dabb8.gif)
 
 
+Here is my code! 
 
+```css
+  /*navbar*/
+
+  #navbar{
+      position:fixed;
+      display:flex; 
+      width:100%;
+      justify-content: space-between;
+      background-color: transparent;
+      align-items:center; 
+      padding: 16px; 
+      transition:all var(--animation-duration) ease-in-out;
+      z-index:1;
+  }
+
+  #navbar.navbar--dark{
+      background-color:var(--color-background);
+      padding:8px;
+  }
+```
+
+```javascript
+//Make navbar transparent when it is on the top 
+const navbar = document.querySelector('#navbar');
+const navbarHeight = navbar.getBoundingClientRect().height;
+
+
+
+document.addEventListener('scroll', () => {
+    console.log(window.scrollY);
+    console.log(`navbarHeight: ${navbarHeight}` );
+    if(window.scrollY > navbarHeight) {
+        navbar.classList.add('navbar--dark');
+    }else{
+        navbar.classList.remove('navbar--dark');
+    }
+    
+    //Make home slowly fade to transparent as the window scrolls down 
+const home = document.querySelector(".home__container");
+const homeHeight = home.getBoundingClientRect().height; 
+document.addEventListener('scroll', ()=>{
+    home.style.opacity = 1 - window.scrollY/homeHeight;
+})
+})
+
+```
 
 
 ## Contact 

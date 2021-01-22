@@ -32,7 +32,7 @@ _4.Using purple color to show my character <br>_
 
 ## Home
 
-First, 
+#### First, 
 I want to make this part much more interesting way. So I decided to give some animation on the text. 
 > 📍 This is the website where I got the idea : <https://tobiasahlin.com/moving-letters/>
 
@@ -90,8 +90,9 @@ anime.timeline({loop: true})
 This is the way I used html code
 <img width="648" alt="스크린샷 2021-01-22 오후 7 24 45" src="https://user-images.githubusercontent.com/77384682/105479415-c52a0c00-5ce7-11eb-846c-1aee25b14040.png">
 
+<hr>
 
-Second, 
+#### Second, 
 I made navbar part transparent when It is on the top, but when it is scrolled down It has lavender color and Home part also slightly invisible.
 
 ![home](https://user-images.githubusercontent.com/77384682/105480165-bf80f600-5ce8-11eb-861d-9d5bd73dabb8.gif)

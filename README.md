@@ -6,6 +6,7 @@
 
 ## Table of Content 
 * **[home](#home)**
+* **[About](#about)**
 * **[Skills](#skills)**
 * Work 
 * Contact 
@@ -147,7 +148,36 @@ document.addEventListener('scroll', ()=>{
 
 ```
 
-## Skills
+## About
+
+This is the part to introduce about me . 
+I tried to highlight my skills by giving css effetcs 
+![skills](https://user-images.githubusercontent.com/77384682/105481745-d1639880-5cea-11eb-88c4-ead6c52e9705.gif)
+
+```css
+ .major__icon{
+      width:170px; 
+      height: 170px; 
+      font-size:70px;
+      line-height:170px;
+      margin:auto;
+      border:1px solid var(--color-icon);
+      border-radius: 50%;
+      margin-bottom:16px;
+      color:var(--color-icon);
+  }
+  
+    .major__icon i{
+      transition:all var(--animation-duration)  ease;
+  }
+
+  .major__icon:hover i {
+      color:var(--color-pink);
+      transform:rotate(-30deg) scale(1.1);
+      
+  }
+```
+
 
 
 ## Contact 

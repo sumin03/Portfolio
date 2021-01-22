@@ -81,6 +81,7 @@
       margin:0; 
       font-family:'Open Sans', sans-serif;
       cursor:default;
+      overflow-x:hidden;
   }
   
   ul,ol{
@@ -616,14 +617,15 @@
     }
       .navbar__toggle-btn{
           display:block;
-
+          right: 32px;
+          top: 38px;
           font-size:var(--font-medium);
       }
 
       #navbar{
           flex-direction: column;
           align-items: flex-start;
-          background-color:var(--color-pink);
+          background-color:var(--color-background);
       }
 
       .navbar__menu{
@@ -645,6 +647,10 @@
       .section{
           padding:16px;
           padding-top:40px;
+      }
+
+      .ml6{
+          font-size:var(--font-large);
       }
 
       .about__majors{
@@ -705,5 +711,68 @@
           line-height:50px;
           bottom:16px; 
           right:16px; 
+          padding:0;
       }
+
+      .circle{
+        position: absolute;
+        border-radius: 50%;
+        animation:ball 1.3s ease-in Infinite Alternate;
+    }
+  
+    .c1{
+        width:50px; 
+        height:50px;
+        border:5px solid lavender;
+        background-color:transparent;
+        top:40px; left:10px;
+    }
+  
+    .c2{
+        width:40px; 
+        height:40px; 
+        background-color:purple;
+        opacity: 0.4;
+        bottom:-40px; 
+        left:100px;
+    }
+  
+    .c3{
+        width:30px; 
+        height: 30px;
+        background-color:lavender;
+        right:10px; 
+        top:100px;
+  
+    }
+  
+    .c4{
+        width:25px; 
+        height:25px; 
+        background-color:purple; 
+        opacity: 0.3; 
+        right:50px; 
+        top:10px;
+    }
+  
+    .c5{
+      width:30px; 
+      height:30px;
+      border:5px solid lavender;
+      background-color:transparent;
+      bottom:40px; right:150px;
+    }
+  
+    @keyframes ball {
+      0% {
+        top:0px;
+      }
+      95% {
+        width: 100px;
+      }
+      to {
+        top:230px;
+        width:100px;
+        height:90px
+      } 
   }

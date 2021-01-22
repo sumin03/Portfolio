@@ -34,6 +34,51 @@ _4.Using purple color to show my character <br>_
 I want to make this part much more interesting way. So I decided to give some animation on the text. 
 > 📍 This is the website where I got the idea : <https://tobiasahlin.com/moving-letters/>
 
+```html 
+<h1 class="ml2">Sunny mornings</h1>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+```
+```css
+
+.ml2 {
+  font-weight: 900;
+  font-size: 3.5em;
+}
+
+.ml2 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
+
+```
+
+```javascript 
+// Wrap every letter in a span
+var textWrapper = document.querySelector('.ml2');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.ml2 .letter',
+    scale: [4,1],
+    opacity: [0,1],
+    translateZ: 0,
+    easing: "easeOutExpo",
+    duration: 950,
+    delay: (el, i) => 70*i
+  }).add({
+    targets: '.ml2',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+  });
+
+```
+
 ## Contact 
 
 E-mail address : <breath.ing0210@gmail.com>

@@ -202,6 +202,14 @@ Here is the code!
 
 ```
 
+## Work 
+
+In work part, I put my projects. 
+As you can see there has 3 buttons to see my projects. 
+when you hover+click, Small ball is dropped from the top to indicate how many projects in there. 
+When you hover the project, You can see the title and what I've done. 
+
+
 
 
 

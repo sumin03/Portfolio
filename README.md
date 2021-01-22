@@ -10,7 +10,7 @@
 * **[Skills](#skills)**
 * **[Work](#work)** 
 * **[Contact](#contact)**
-* **[Arrow up](#arrow up)**
+* **[Arrow](#arrow)**
 
 ## Features 
 * Responsive 
@@ -288,7 +288,7 @@ Here is my code!
   }
 ```
 
-## Arrow up 
+## Arrow
 When we are scrolling the page, always need to go to top and find out that it is a bit annoyed to scolling up everytime. 
 So I made _arrow up_ button. 
 If you click it you can directly go on the top. 

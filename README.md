@@ -29,4 +29,4 @@ _4.Using purple color to show my character <br>_
 
 ## Contact 
 
-* E-mail address : <breath.ing0210@gmail.com>
+E-mail address : <breath.ing0210@gmail.com>

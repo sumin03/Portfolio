@@ -23,6 +23,8 @@
 ## Problems 
 It was the first time I made website with Pure vanilla Javascript, so I had lots of problems at making structure, But I could fix the problems by google and watching tutorials. 
 
+
+
 ## Goals 
 _1.Making responsive webpage <br>_
 _2.Trying to not to use Jquery <br>_
@@ -148,6 +150,9 @@ document.addEventListener('scroll', ()=>{
 
 ```
 
+
+
+
 ## About
 
 This is the part to introduce about me . 
@@ -178,6 +183,9 @@ I tried to highlight my skills by giving css effetcs
   }
 ```
 
+
+
+
 ## Skills 
 
 In About part, I only indicate What I can do. 
@@ -201,6 +209,8 @@ Here is the code!
  </div>
 
 ```
+
+
 
 ## Work 
 
@@ -247,6 +257,8 @@ workBtnContainer.addEventListener('click', (e) =>{
 });
 
 
+
+
 ```
 ## Contact 
 
@@ -274,6 +286,38 @@ Here is my code!
     } 
   }
 ```
+
+## Arrow up 
+When we are scrolling the page, always need to go to top and find out that it is a bit annoyed to scolling up everytime. 
+So I made _arrow up_ button. 
+If you click it you can directly go on the top. 
+
+![arrow](https://user-images.githubusercontent.com/77384682/105497607-6cb43800-5d02-11eb-96d5-e4e47fb97d08.gif)
+
+
+```javascript
+
+ function scrollIntoView(selector) {
+    const scrollTo = document.querySelector(selector);
+    scrollTo.scrollIntoView({behavior:'smooth'});
+    selectNavItem(navItems[sectionIds.indexOf(selector)]);
+}
+
+//Show "arrow up" button when scrolling down 
+const arrowUp = document.querySelector(".arrow-up");
+document.addEventListener('scroll', () => {
+    if(window.scrollY > homeHeight /2){
+        arrowUp.classList.add("visible"); 
+
+    }else{
+        arrowUp.classList.remove("visible"); 
+    }
+});
+
+//Handle click on the "arrow up" button
+arrowUp.addEventListener('click', () => {
+    scrollIntoView('#home');
+});
 
 
 

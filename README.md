@@ -210,7 +210,7 @@ when you hover+click, Small ball is dropped from the top to indicate how many pr
 When you hover the project, You can see the title and what I've done. 
 ![work](https://user-images.githubusercontent.com/77384682/105484829-53ee5700-5cef-11eb-9d7f-ae1e68869086.gif)
 
-As you guys know we can make those effect with jquery but I tried to make pure vanila javascript 
+As you guys know we can make those effect with jquery but I tried to make pure vanila javascript<br>
 Here is my code! 
 
 ```javascript

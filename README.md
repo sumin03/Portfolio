@@ -319,7 +319,7 @@ arrowUp.addEventListener('click', () => {
     scrollIntoView('#home');
 });
 
-
+```
 
 ## How to contact me 
 

@@ -22,6 +22,6 @@ It was the first time I made website with Pure vanilla Javascript, so I had lots
 
 ## Goals 
 _1.Making responsive webpage <br>_
-2.Trying to not to use Jquery <br>
-3.Studying Javascript and using it as much as I can do <br>
-4.Using purple color to show my character <br>
+_2.Trying to not to use Jquery <br>_
+_3.Studying Javascript and using it as much as I can do <br>_
+_4.Using purple color to show my character <br>_
